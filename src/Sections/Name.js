@@ -1,5 +1,46 @@
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Name() {
-  return <div>Name</div>;
+  return (
+    <Container
+      sx={{
+        my: 5,
+        flexDirection: "column",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Box sx={{ p: 2, border: "1px solid #e6cebd" }}>
+        <Box sx={{ p: 2, border: "1px solid #e6cebd" }}>
+          <Box
+            component="img"
+            src="https://img.freepik.com/free-photo/delicious-ice-cream-with-topping_23-2150735486.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=ais"
+          />
+          <Typography textAlign="center" variant="h5">
+            HEY THERE! I AM A
+          </Typography>
+          <Box textAlign="center">
+            <TypeAnimation
+              sequence={[
+                "Web Developer",
+                500,
+                "Freelancer",
+                500,
+                "UI/UX Engineer",
+                500,
+                "Open Source Baddie",
+                500,
+              ]}
+              style={{ fontSize: "20px" }}
+              speed={40}
+              repeat={Infinity}
+            />
+          </Box>
+        </Box>
+      </Box>
+    </Container>
+  );
 }

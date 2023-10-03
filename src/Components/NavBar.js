@@ -34,7 +34,7 @@ export default function NavBar() {
           onClick={handleMenu}
           color="inherit"
         >
-          <FontAwesomeIcon icon={faBarsStaggered} />
+          <FontAwesomeIcon icon={faBarsStaggered} color="#e6cebd" />
         </IconButton>
         <Menu
           id="menu-appbar"
