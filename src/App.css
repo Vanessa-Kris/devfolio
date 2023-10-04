@@ -9,12 +9,92 @@
 
 body {
     background-color: #161616 !important;   
+    color: #e6cebd !important;
 }
 
 .divider {
-    color: white !important;
+    color: #232323 !important;
 }
 
 p{
     font-size: 25px !important;
 }
+
+#progress {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+  }
+  
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+  }
+  
+  .bg {
+    stroke: var(--accent);
+    opacity: 0.3;
+  }
+  
+  #progress .indicator {
+    stroke: var(--accent);
+  }
+  
+  .list {
+    display: flex;
+    list-style: none;
+    height: 390px;
+    overflow-x: scroll;
+    padding: 20px 0;
+    flex: 0 0 600px;
+    margin: 0 auto;
+  }
+
+  .list2 {
+    display: flex;
+    list-style: none;
+    height: 250px;
+    overflow-x: scroll;
+    padding: 20px 0;
+    flex: 0 0 600px;
+    margin: 0 auto;
+  }
+  
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: #fff3;
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #fff3;
+  }
+  
+  .listitems {
+    flex: 0 0 250px;
+    background: var(--accent);
+    margin: 0 20px 0 0;
+  }
+   
+  .listitems2 {
+    flex: 0 0 400px;
+    background: var(--accent);
+    margin: 0 20px 0 0;
+  }
+  
+  /* li:last-of-type {
+    margin: 0;
+  } */
+
+ input {
+    color: white !important; /* Change the text color to white when not focused (not clicked) */
+  }
+  
