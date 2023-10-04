@@ -1,6 +1,6 @@
 # devfolio
 
-My Resume Version 3 😅
+My Resume Version 3 😅 (Work in progress)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,7 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+To install all deps
+
 #### `npm install`
+
+To start the project
 
 #### `npm start`
 
