@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
 
 body {
-    background-color: #673147 !important;
+    background-color: #161616 !important;   
 }
 
 .divider {
     color: white !important;
+}
+
+p{
+    font-size: 25px !important;
 }

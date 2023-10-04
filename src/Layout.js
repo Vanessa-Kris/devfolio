@@ -14,9 +14,9 @@ export default function Layout(props) {
           <Divider
             flexItem
             orientation="vertical"
-            sx={{ bgcolor: "#e6cebd" }}
+            sx={{ bgcolor: "#a55f71" }}
           />
-          <Grid item md={4}>
+          <Grid item md={4} position="sticky">
             {props.nav}
             {props.rightSection}
           </Grid>
