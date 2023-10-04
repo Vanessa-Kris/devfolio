@@ -37,7 +37,7 @@ export default function About() {
             <ListItem> TWITTER X</ListItem>
           </List>
         </Grid>
-        <Grid item md={4} xs={8}>
+        <Grid item md={4} xs={8} sx={{ color: "#fff" }}>
           <List>
             <ListItem> Vanessa Christopher Igwe </ListItem>
             <ListItem> 10th August 2000 </ListItem>
