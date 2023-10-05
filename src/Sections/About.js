@@ -18,10 +18,11 @@ export default function About() {
       </Typography>
 
       <Typography>
-        I'm a Freelancer Front-end Developer with over 12 years of experience.
-        I'm from San Francisco. I code and create web elements for amazing
-        people around the world. I like work with new people. New people are new
-        experiences.
+        I'm a front-end developer with more than two years of real-world
+        experience under my belt. I'm from the lively city of Port Harcourt,
+        Nigeria. What really gets me going is creating eye-catching websites.
+        I'm always on the lookout for exciting projects to team up on, and
+        that's a never-ending adventure for me!
       </Typography>
 
       <Grid container sx={{ my: 5 }}>

@@ -41,7 +41,7 @@ export default function Contact() {
           <TextField
             fullWidth
             id="outlined-basic"
-            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
           />
         </Grid>
         <Grid item md={6} xs={12} sx={{ py: 2 }}>
@@ -50,7 +50,7 @@ export default function Contact() {
             fullWidth
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
           />
         </Grid>
         <Grid item md={12} xs={12} sx={{ py: 2 }}>
@@ -59,7 +59,7 @@ export default function Contact() {
             fullWidth
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
           />
         </Grid>
         <Grid item md={12} xs={12} sx={{ py: 2 }}>
@@ -70,7 +70,7 @@ export default function Contact() {
             rows={4}
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
           />
         </Grid>
 
@@ -93,7 +93,7 @@ export default function Contact() {
           variant={"h4"}
           sx={{ fontSize: { md: "37px", xs: "30px" } }}
         >
-          Sonac Street bamenda, Cameroon ( Open to relocating )
+          Sonac Street Bamenda, Cameroon ( Open to relocating )
         </Typography>
 
         <Typography variant="h5" sx={{ fontSize: { md: "17px" }, mt: 5 }}>
@@ -107,31 +107,64 @@ export default function Contact() {
           Vanessaigwe1@gmail.com
         </Typography>
 
-        <FontAwesomeIcon
-          style={{ fontSize: "30px", marginRight: 30 }}
-          icon={faGithub}
-          color="#e6cebd"
-        />
-        <FontAwesomeIcon
-          style={{ fontSize: "30px", marginRight: 30 }}
-          icon={faLinkedin}
-          color="#e6cebd"
-        />
-        <FontAwesomeIcon
-          style={{ fontSize: "30px", marginRight: 30 }}
-          icon={faTwitter}
-          color="#e6cebd"
-        />
-        <FontAwesomeIcon
-          style={{ fontSize: "30px", marginRight: 30 }}
-          icon={faFacebook}
-          color="#e6cebd"
-        />
-        <FontAwesomeIcon
-          style={{ fontSize: "30px", marginRight: 30 }}
-          icon={faInstagram}
-          color="#e6cebd"
-        />
+        <Box
+          component="a"
+          href="https://github.com/Vanessa-Kris"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            style={{ fontSize: "30px", marginRight: 30 }}
+            icon={faGithub}
+            color="#a55f71"
+          />
+        </Box>
+        <Box
+          component="a"
+          href="https://www.linkedin.com/in/vanessachristopherigwe"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            style={{ fontSize: "30px", marginRight: 30 }}
+            icon={faLinkedin}
+            color="#a55f71"
+          />
+        </Box>
+
+        <Box
+          component="a"
+          href="https://twitter.com/Mini_on_Nessa"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            style={{ fontSize: "30px", marginRight: 30 }}
+            icon={faTwitter}
+            color="#a55f71"
+          />
+        </Box>
+
+        <Box
+          component="a"
+          href="https://facebook.com/vanesssachrsitopherigwe/"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            style={{ fontSize: "30px", marginRight: 30 }}
+            icon={faFacebook}
+            color="#a55f71"
+          />
+        </Box>
+
+        <Box
+          component="a"
+          href="https://www.instagram.com/vanessachristopherigwe/"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            style={{ fontSize: "30px", marginRight: 30 }}
+            icon={faInstagram}
+            color="#a55f71"
+          />
+        </Box>
       </Box>
     </Box>
   );

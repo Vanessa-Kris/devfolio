@@ -79,63 +79,142 @@ export default function Experience() {
       </Box>
       <CustomTabPanel value={value} index={0}>
         <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
-          <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
-            Company{" "}
+          <Typography sx={{ px: { md: 2, xs: 1 }, color: "#fff" }} variant="h5">
+            Outreachy{" "}
             <span style={{ fontSize: "15px", color: "#e6cebd" }}>
-              ( 1998 - Today )
+              ( Dec 2021 - Mar 2022 )
             </span>
           </Typography>
           <Typography sx={{ px: 2, pt: 2, color: "#fff" }} variant="h4">
-            Jr. Front-end Engineer
+            Fedora (Package Manager)
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Packaged software for the Fedora Operating System
+            <ul>
+              <a
+                style={{ textDecoration: "underline" }}
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://packages.fedoraproject.org/pkgs/python-ephyviewer/python3-ephyviewer/"
+              >
+                <li>Python Ephyviewer</li>{" "}
+              </a>
+              <a
+                style={{ textDecoration: "underline" }}
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://packages.fedoraproject.org/pkgs/python-pooch/python3-pooch/"
+              >
+                {" "}
+                <li>Python Pooch</li>{" "}
+              </a>
+              <a
+                style={{ textDecoration: "underline" }}
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://packages.fedoraproject.org/pkgs/python-astor/python3-astor/"
+              >
+                {" "}
+                <li>Python Astor</li>{" "}
+              </a>{" "}
+              etc .
+            </ul>
+            Chaired NeuroFedora meeting
+            <br />
+            Edited Fedora documents
+            <br />
+            Collaboraive developement with Git ( Pagure )
           </CardContent>
         </Card>
         {/*  */}
         <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
-            Company{" "}
+            Afkanerd{" "}
             <span style={{ fontSize: "15px", color: "#e6cebd" }}>
-              ( 1998 - Today )
+              ( Apr 2022 - Apr 2023 )
             </span>
           </Typography>
           <Typography sx={{ px: 2, pt: 2, color: "#fff" }} variant="h4">
             Jr. Front-end Engineer
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Worked with the backend team to build{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ textDecoration: "underline" }}
+              href="https://smswithoutborders.com:8080/"
+            >
+              SMSWithoutBorders User analytics{" "}
+            </a>
+            <br />
+            Worked closely with the backend team to maintain{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ textDecoration: "underline" }}
+              href="https://smswithoutborders.com/"
+            >
+              SMSWithoutBorders web platform{" "}
+            </a>
+            <br />
+            Worked closely with the backend team to build Deku SMS Messaging{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ textDecoration: "underline" }}
+              href="https://github.com/deku-messaging/Deku-Web-FE"
+            >
+              web interface{" "}
+            </a>
           </CardContent>
         </Card>
         {/*  */}
         <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
-            Company{" "}
+            Stunners Galleria{" "}
             <span style={{ fontSize: "15px", color: "#e6cebd" }}>
-              ( 1998 - Today )
+              ( Jan 2023 - Today )
             </span>
           </Typography>
           <Typography sx={{ px: 2, pt: 2, color: "#fff" }} variant="h4">
-            Jr. Front-end Engineer
+            Freelance Front-end Engineer
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Worked closely with the backend team to create the{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ textDecoration: "underline" }}
+              href="https://stunnersgalleria.com"
+            >
+              Stunners Galleria online store{" "}
+            </a>
+            <br />
+            Worked closely with the backend team to create the{" "}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ textDecoration: "underline" }}
+              href="https://blog.stunnersgalleria.com"
+            >
+              Stunners Galleria Blog website.{" "}
+            </a>
+            <br />
+            Created non technical content for Stunners Galleria blog
           </CardContent>
         </Card>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
-            High Scool{" "}
+            Faith International College{" "}
             <span style={{ fontSize: "15px", color: "#e6cebd" }}>
-              ( 1998 - Today )
+              ( 2010 - 2016 )
             </span>
           </Typography>
           <Typography sx={{ px: 2, pt: 2, color: "#fff" }} variant="h4">
-            Sciences
+            High Scool
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
             Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do
@@ -148,7 +227,7 @@ export default function Experience() {
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             RIVERS STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY{" "}
             <span style={{ fontSize: "15px", color: "#e6cebd" }}>
-              ( 1998 - Today )
+              ( 2016 - 2019 )
             </span>
           </Typography>
           <Typography sx={{ px: 2, pt: 2, color: "#fff" }} variant="h4">

@@ -35,9 +35,8 @@ export default function Reviews() {
       <ul ref={ref} className="list2">
         <li className="listitems2">
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            "I help ambitious businesses like yours generate more profits by
-            building awareness, driving web traffic, connecting with customers
-            and growing overall sales."
+            "Vanessa is an exceptional team mate, fast learner, creative and
+            absolutely fun to be around"
           </Typography>
           <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>
             Fru Promise
@@ -48,37 +47,14 @@ export default function Reviews() {
         </li>
         <li className="listitems2">
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            " I help ambitious businesses like yours generate more profits by
-            building awareness, driving web traffic, connecting with customers
-            and growing overall sales."
+            " I Couldn't have found a better persin to build my blogging
+            website, it looks super cool and exactly as i envisioned."
           </Typography>
           <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>
-            Viola Dave
+            Sheba Chris
           </Typography>
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            Imaginary Friend
-          </Typography>
-        </li>
-        <li className="listitems2">
-          <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            " I help ambitious businesses like yours generate more profits by
-            building awareness, driving web traffic, connecting with customers
-            and growing overall sales."
-          </Typography>
-          <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>Clinton</Typography>
-          <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            Imaginary Friend
-          </Typography>
-        </li>
-        <li className="listitems2">
-          <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            " I help ambitious businesses like yours generate more profits by
-            building awareness, driving web traffic, connecting with customers
-            and growing overall sales."
-          </Typography>
-          <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>Celia</Typography>
-          <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            Imaginary Friend
+            Customer
           </Typography>
         </li>
       </ul>

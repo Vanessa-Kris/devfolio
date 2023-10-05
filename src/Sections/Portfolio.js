@@ -38,42 +38,76 @@ export default function Portfolio() {
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Fashion E-commerce web
           </Typography>
-          <Typography sx={{ color: "#fff" }}>Stunners Galleria</Typography>
+          <Typography
+            component="a"
+            href="https://stunnersgalleria.com"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            Stunners Galleria
+          </Typography>
         </li>
         <li className="listitems">
           <img src="/3.png" alt="" />
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Static Kitchen web
           </Typography>
-          <Typography sx={{ color: "#fff" }}>Aroma Kitchen</Typography>
+          <Typography
+            component="a"
+            href="https://aroma-kitchen.netlify.app/"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            Aroma Kitchen
+          </Typography>
         </li>
         <li className="listitems">
           <img src="/2.png" alt="" />
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Fashion blog web
           </Typography>
-          <Typography sx={{ color: "#fff" }}>Stunners Galleria Blog</Typography>
+          <Typography
+            component="a"
+            href="https://blog.stunnersgalleria.com/"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            Stunners Galleria Blog
+          </Typography>
         </li>
         <li className="listitems">
           <img src="/4.png" alt="" />
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             SMS Messaging web
           </Typography>
-          <Typography sx={{ color: "#fff" }}>Deku Messaging</Typography>
+          <Typography
+            component="a"
+            href="https://github.com/deku-messaging/Deku-Web-FE"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            Deku Messaging
+          </Typography>
         </li>
         <li className="listitems">
           <img src="/5.png" alt="" />
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             web (maintainer)
           </Typography>
-          <Typography sx={{ color: "#fff" }}>SMSWithoutBorders</Typography>
+          <Typography
+            component="a"
+            href="https://smswithoutborders.com/"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            SMSWithoutBorders
+          </Typography>
         </li>
         <li className="listitems">
           <img src="/6.png" alt="" />
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Online training web
           </Typography>
-          <Typography sx={{ color: "#fff" }}>
+          <Typography
+            component="a"
+            href="/"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
             Career Navigator Academy
           </Typography>
         </li>
@@ -82,14 +116,26 @@ export default function Portfolio() {
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Portfolio management web
           </Typography>
-          <Typography sx={{ color: "#fff" }}>Impact Investment</Typography>
+          <Typography
+            component="a"
+            href="https://impact-investment.netlify.app/"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            Impact Investment
+          </Typography>
         </li>
         <li className="listitems">
           <img src="/8.png" alt="" />
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Dev Portfolio (v2)
           </Typography>
-          <Typography sx={{ color: "#fff" }}>DevFolio</Typography>
+          <Typography
+            component="a"
+            href="https://vanessa-kris.github.io/"
+            sx={{ color: "#fff", fontSize: "25px" }}
+          >
+            DevFolio
+          </Typography>
         </li>
       </ul>
     </Box>

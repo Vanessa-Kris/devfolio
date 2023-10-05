@@ -10,6 +10,8 @@ import {
   DialogActions,
   Button,
 } from "@mui/material";
+import Outreachy21 from "../Blogs/outreachy21";
+import Transition from "../Blogs/transition";
 
 export default function Blogs() {
   const [openIndex, setOpenIndex] = useState(-1);
@@ -19,25 +21,22 @@ export default function Blogs() {
       imageUrl:
         "https://img.freepik.com/free-photo/spaceship-orbits-dark-galaxy-glowing-blue-comet-generated-by-ai_188544-9662.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph",
       date: "October 1, 2023",
-      title:
-        "The Genesis Of Everything; The Literal Beginning of the entire world.",
-      content: "Some Blog Content",
+      title: "2 Years Tech Journey check! Progress so far and all the gist.",
+      content: "Coming Soon",
     },
     {
       imageUrl:
-        "https://img.freepik.com/free-photo/human-helix-dna-structure-concept-blue-color_90220-1399.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph",
+        "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210414121548/Outreachy-Internship-Program.png",
       date: "October 1, 2023",
-      title:
-        "The Exodus Of Everything; The Literal Beginning of the entire world.",
-      content: "Some Blog Content2",
+      title: "My Outreachy December 2021/2022 Journey With Fedora.",
+      content: <Outreachy21 />,
     },
     {
       imageUrl:
-        "https://img.freepik.com/free-photo/baked-quails-pan-dark-surface_2829-5596.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph",
+        "https://img.freepik.com/free-photo/man-jump-through-gap-hill-man-jumping-cliff-blue-sky-business-concept-idea_1323-186.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph",
       date: "October 1, 2023",
-      title:
-        "The Whatever Of Everything; The Literal Beginning of the entire world.",
-      content: "Some Blog Content3",
+      title: "Transition to Tech (How I ended up here and all the challenges).",
+      content: <Transition />,
     },
   ];
 
@@ -97,9 +96,15 @@ export default function Blogs() {
           key={index}
           open={openIndex === index}
           onClose={handleClose}
-          maxWidth="md"
+          PaperProps={{
+            sx: {
+              backgroundColor: "#161616",
+              color: "#e6cebd", // Set the background color of the dialog content
+            },
+          }}
+          // maxWidth="md"
         >
-          <DialogTitle>Blog Post Title</DialogTitle>
+          <DialogTitle> {post.title}</DialogTitle>
           <DialogContent>
             <img style={{ maxWidth: "100%" }} src={post.imageUrl} alt="" />
             <Typography variant="h5" sx={{ fontSize: "17px", py: 2 }}>
