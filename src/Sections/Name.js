@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Grid } from "@mui/material";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 export default function Name() {
   return (
@@ -28,12 +29,21 @@ export default function Name() {
             justifyContent="center"
             alignItems="center"
             display="flex"
-            sx={{ m: 2 }}
+            sx={{ my: 2 }}
           >
-            <Grid item md={2} xs={2}>
-              <Typography variant="h5">[</Typography>
+            <Grid item md={1} xs={1}>
+              <Typography sx={{ color: "green" }} variant="h4">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.9, repeat: Infinity }}
+                >
+                  {"{"}
+                </motion.div>
+              </Typography>
             </Grid>
-            <Grid item md={8} xs={8}>
+            <Grid item md={9} xs={9}>
               <Box textAlign="center">
                 <TypeAnimation
                   sequence={[
@@ -43,17 +53,26 @@ export default function Name() {
                     500,
                     "UI/UX Engineer",
                     500,
-                    "Open Source Baddie",
+                    "Entrepreneur",
                     500,
                   ]}
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "25px" }}
                   speed={40}
                   repeat={Infinity}
                 />
               </Box>
             </Grid>
-            <Grid item md={2} xs={2}>
-              <Typography variant="h5">]</Typography>
+            <Grid item md={1} xs={1}>
+              <Typography sx={{ color: "green" }} variant="h4">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.9, repeat: Infinity }}
+                >
+                  {"}"}
+                </motion.div>
+              </Typography>
             </Grid>
           </Grid>
         </Box>

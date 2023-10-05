@@ -1,4 +1,11 @@
-import { Box, Typography, Divider, Grid, TextField } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Divider,
+  Grid,
+  TextField,
+  Button,
+} from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -34,7 +41,7 @@ export default function Contact() {
           <TextField
             fullWidth
             id="outlined-basic"
-            sx={{ border: "1px solid #a55f71" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
           />
         </Grid>
         <Grid item md={6} xs={12} sx={{ py: 2 }}>
@@ -43,7 +50,7 @@ export default function Contact() {
             fullWidth
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
           />
         </Grid>
         <Grid item md={12} xs={12} sx={{ py: 2 }}>
@@ -52,35 +59,51 @@ export default function Contact() {
             fullWidth
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
           />
         </Grid>
         <Grid item md={12} xs={12} sx={{ py: 2 }}>
           Message* <br />
           <TextField
             fullWidth
+            multiline
             rows={4}
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71" }}
+            sx={{ border: "1px solid #a55f71", borderRadius: "10px" }}
           />
+        </Grid>
+
+        <Grid item md={12} xs={12} sx={{ py: 2 }}>
+          <Button
+            variant="outlined"
+            sx={{ width: "100%", p: 2, fontWeight: 900 }}
+          >
+            Send Message
+          </Button>
         </Grid>
       </Grid>
 
-      <Box sx={{ py: 7 }}>
-        <Typography variant="h5" sx={{ fontSize: "17px" }}>
+      <Box sx={{ py: 5 }}>
+        <Typography variant="h5" sx={{ fontSize: { md: "17px" } }}>
           Adress
         </Typography>
 
-        <Typography variant="h4">
+        <Typography
+          variant={"h4"}
+          sx={{ fontSize: { md: "37px", xs: "30px" } }}
+        >
           Sonac Street bamenda, Cameroon ( Open to relocating )
         </Typography>
 
-        <Typography variant="h5" sx={{ fontSize: "17px", mt: 5 }}>
+        <Typography variant="h5" sx={{ fontSize: { md: "17px" }, mt: 5 }}>
           Email
         </Typography>
 
-        <Typography variant="h4" sx={{ mb: 5 }}>
+        <Typography
+          variant={"h4"}
+          sx={{ mb: 5, fontSize: { md: "37px", xs: "30px" } }}
+        >
           Vanessaigwe1@gmail.com
         </Typography>
 

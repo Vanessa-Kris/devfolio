@@ -66,15 +66,26 @@ export default function Blogs() {
         {blogPosts.map((post, index) => (
           <Grid item md={6} sx={{ p: 2 }} key={index}>
             <img
-              style={{ height: "200px", cursor: "pointer" }}
+              style={{
+                height: "200px",
+                cursor: "pointer",
+              }}
               onClick={() => handleOpen(index)}
               src={post.imageUrl}
               alt=""
             />
-            <Typography variant="h5" sx={{ fontSize: "17px", py: 2 }}>
+            <Typography
+              onClick={() => handleOpen(index)}
+              variant="h5"
+              sx={{ fontSize: "17px", py: 2 }}
+            >
               {post.date}
             </Typography>
-            <Typography variant="h5" sx={{ fontSize: "17px", color: "#fff" }}>
+            <Typography
+              onClick={() => handleOpen(index)}
+              variant="h5"
+              sx={{ fontSize: "17px", color: "#fff" }}
+            >
               {post.title}
             </Typography>
           </Grid>

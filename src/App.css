@@ -85,16 +85,26 @@ p{
   }
    
   .listitems2 {
-    flex: 0 0 400px;
+    flex: 0 0 340px;
     background: var(--accent);
     margin: 0 20px 0 0;
   }
   
-  /* li:last-of-type {
-    margin: 0;
-  } */
+
 
  input {
-    color: white !important; /* Change the text color to white when not focused (not clicked) */
+    color: white !important;
   }
   
+  .sticky-grid {
+    position: -webkit-sticky;
+    position: fixed !important;
+    top: 50%;
+    right: 0;    
+    transform: translate(-15%, -50%);
+  }
+  
+  .mouse-motion-circle {
+    z-index: 9999;
+    pointer-events: none; /* Allow clicks to go through the circle */
+  }
