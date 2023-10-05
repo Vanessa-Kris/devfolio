@@ -8,7 +8,7 @@ export default function Reviews() {
   const { scrollXProgress } = useScroll({ container: ref });
 
   return (
-    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#e6cebd" }}>
+    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         What People Are Saying
       </Typography>
@@ -16,7 +16,7 @@ export default function Reviews() {
         Reviews
         <Divider
           flexItem
-          sx={{ bgcolor: "#e6cebd", width: { md: "20%", xs: "40%" }, my: 2 }}
+          sx={{ bgcolor: "#d7d0d7", width: { md: "20%", xs: "40%" }, my: 2 }}
         />
       </Typography>
 

@@ -12,7 +12,7 @@ export default function Name() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        color: "#e6cebd",
+        color: "#d7d0d7",
       }}
     >
       <Box sx={{ p: 1, border: "1px solid #a55f71", borderRadius: "5px" }}>

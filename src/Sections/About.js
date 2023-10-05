@@ -5,7 +5,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#e6cebd" }}>
+    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         ABOUT ME
       </Typography>
@@ -13,7 +13,7 @@ export default function About() {
         Biography
         <Divider
           flexItem
-          sx={{ bgcolor: "#e6cebd", width: { md: "20%", xs: "40%" }, my: 2 }}
+          sx={{ bgcolor: "#d7d0d7", width: { md: "20%", xs: "40%" }, my: 2 }}
         />
       </Typography>
 
@@ -55,13 +55,13 @@ export default function About() {
             justifyContent="center"
             // display="flex"
             textAlign="center"
-            sx={{ border: "1px solid #e6cebd", borderRadius: "10px", m: 2 }}
+            sx={{ border: "1px solid #d7d0d7", borderRadius: "10px", m: 2 }}
           >
             <FontAwesomeIcon
               style={{ fontSize: "60px", padding: 50 }}
               icon={faDownload}
               bounce
-              color="#e6cebd"
+              color="#d7d0d7"
             />{" "}
             <br />
             <Typography variant="body">Download CV</Typography>

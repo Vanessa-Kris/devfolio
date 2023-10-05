@@ -18,7 +18,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#e6cebd" }}>
+    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         CONTACT
       </Typography>
@@ -26,7 +26,7 @@ export default function Contact() {
         Get In Touch
         <Divider
           flexItem
-          sx={{ bgcolor: "#e6cebd", width: { md: "20%", xs: "40%" }, my: 2 }}
+          sx={{ bgcolor: "#d7d0d7", width: { md: "20%", xs: "40%" }, my: 2 }}
         />
       </Typography>
 

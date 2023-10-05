@@ -48,7 +48,7 @@ export default function Experience() {
   };
 
   return (
-    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#e6cebd" }}>
+    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           component="text"
@@ -57,13 +57,13 @@ export default function Experience() {
           aria-label="basic tabs example"
         >
           <Tab
-            sx={{ color: "#e6cebd", fontSize: { md: "20px", xs: "15px" } }}
+            sx={{ color: "#d7d0d7", fontSize: { md: "20px", xs: "15px" } }}
             label="Experience"
             {...a11yProps(0)}
           />
           <Tab
             sx={{
-              color: "#e6cebd",
+              color: "#d7d0d7",
               fontSize: { md: "20px", xs: "15px" },
               mx: { md: 2, xs: 0 },
             }}
@@ -71,17 +71,17 @@ export default function Experience() {
             {...a11yProps(1)}
           />
           <Tab
-            sx={{ color: "#e6cebd", fontSize: { md: "20px", xs: "15px" } }}
+            sx={{ color: "#d7d0d7", fontSize: { md: "20px", xs: "15px" } }}
             label="Skills"
             {...a11yProps(2)}
           />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
+        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: { md: 2, xs: 1 }, color: "#fff" }} variant="h5">
             Outreachy{" "}
-            <span style={{ fontSize: "15px", color: "#e6cebd" }}>
+            <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
               ( Dec 2021 - Mar 2022 )
             </span>
           </Typography>
@@ -127,10 +127,10 @@ export default function Experience() {
           </CardContent>
         </Card>
         {/*  */}
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
+        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             Afkanerd{" "}
-            <span style={{ fontSize: "15px", color: "#e6cebd" }}>
+            <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
               ( Apr 2022 - Apr 2023 )
             </span>
           </Typography>
@@ -170,10 +170,10 @@ export default function Experience() {
           </CardContent>
         </Card>
         {/*  */}
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
+        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             Stunners Galleria{" "}
-            <span style={{ fontSize: "15px", color: "#e6cebd" }}>
+            <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
               ( Jan 2023 - Today )
             </span>
           </Typography>
@@ -206,10 +206,10 @@ export default function Experience() {
         </Card>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
+        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             Faith International College{" "}
-            <span style={{ fontSize: "15px", color: "#e6cebd" }}>
+            <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
               ( 2010 - 2016 )
             </span>
           </Typography>
@@ -223,10 +223,10 @@ export default function Experience() {
         </Card>
 
         {/*  */}
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#e6cebd" }}>
+        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             RIVERS STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY{" "}
-            <span style={{ fontSize: "15px", color: "#e6cebd" }}>
+            <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
               ( 2016 - 2019 )
             </span>
           </Typography>

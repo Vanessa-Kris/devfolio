@@ -8,7 +8,7 @@ export default function Portfolio() {
   const { scrollXProgress } = useScroll({ container: ref });
 
   return (
-    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#e6cebd" }}>
+    <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         PORTFOLIO
       </Typography>
@@ -16,7 +16,7 @@ export default function Portfolio() {
         Featured Projects
         <Divider
           flexItem
-          sx={{ bgcolor: "#e6cebd", width: { md: "20%", xs: "40%" }, my: 2 }}
+          sx={{ bgcolor: "#d7d0d7", width: { md: "20%", xs: "40%" }, my: 2 }}
         />
       </Typography>
 
@@ -40,6 +40,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://stunnersgalleria.com"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -53,6 +55,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://aroma-kitchen.netlify.app/"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -66,6 +70,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://blog.stunnersgalleria.com/"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -79,6 +85,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://github.com/deku-messaging/Deku-Web-FE"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -92,6 +100,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://smswithoutborders.com/"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -105,6 +115,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="/"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -118,6 +130,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://impact-investment.netlify.app/"
             sx={{ color: "#fff", fontSize: "25px" }}
           >
@@ -131,6 +145,8 @@ export default function Portfolio() {
           </Typography>
           <Typography
             component="a"
+            target="_blank"
+            rel="noreferrer noopener"
             href="https://vanessa-kris.github.io/"
             sx={{ color: "#fff", fontSize: "25px" }}
           >

@@ -41,13 +41,13 @@ export default function NavBar() {
           onClick={handleMenu}
           color="inherit"
         >
-          <FontAwesomeIcon icon={faBarsStaggered} color="#e6cebd" />
+          <FontAwesomeIcon icon={faBarsStaggered} color="#d7d0d7" />
         </IconButton>
         <Menu
           PaperProps={{
             sx: {
               backgroundColor: "#171717",
-              color: "#e6cebd", // Set the background color of the dialog content
+              color: "#d7d0d7", // Set the background color of the dialog content
             },
           }}
           id="menu-appbar"
