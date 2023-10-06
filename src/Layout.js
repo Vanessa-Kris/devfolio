@@ -1,8 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Box, Grid } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import MouseMotionCircle from "./Components/Motion";
+import NavBar from "./Components/NavBar";
+import Name from "./Sections/Name";
 
 export default function Layout(props) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -29,10 +31,16 @@ export default function Layout(props) {
   return (
     <Fragment>
       <Box sx={{ display: { md: "block", xs: "none" } }}>
-        <Grid container columnSpacing={2}>
+        <Grid id="layout" container columnSpacing={2}>
           <Grid item md={scrollPosition > 100 ? 8 : 7} xs={12}>
-            {props.leftSection}
-            {props.footer}
+            <Box id="intro">{props.intro}</Box>
+            <Box id="about">{props.about}</Box>
+            <Box id="experience">{props.experience}</Box>
+            <Box id="portfolio">{props.portfolio}</Box>
+            <Box id="reviews">{props.reviews}</Box>
+            <Box id="blogs">{props.blogs}</Box>
+            <Box id="contact">{props.contact}</Box>
+            <Box id="footer">{props.footer}</Box>
           </Grid>
           <Divider
             flexItem
@@ -46,18 +54,35 @@ export default function Layout(props) {
               pr: 4,
             }}
           >
-            {props.nav}
+            <NavBar />
+            {/* {props.nav} */}
           </Box>
 
           <Grid item md={scrollPosition > 100 ? 3 : 4} className="sticky-grid">
-            {props.rightSection}
+            <Name />
+            {/* {props.name} */}
           </Grid>
         </Grid>
       </Box>
       <Box sx={{ display: { md: "none", xs: "block" } }}>
+        {/* {props.intro}
+        {props.about}
+        {props.experience}
+        {props.portfolio}
+        {props.reviews}
+        {props.blogs}
+        {props.contact}
+        {props.footer} */}
+
         {props.nav}
-        {props.rightSection}
-        {props.leftSection}
+        {props.name}
+        <Box id="intro">{props.intro}</Box>
+        <Box id="about">{props.about}</Box>
+        <Box id="experience">{props.experience}</Box>
+        <Box id="portfolio">{props.portfolio}</Box>
+        <Box id="reviews">{props.reviews}</Box>
+        <Box id="blogs">{props.blogs}</Box>
+        <Box id="contact">{props.contact}</Box>
         {props.footer}
       </Box>
       <MouseMotionCircle x={mousePosition.x} y={mousePosition.y} />

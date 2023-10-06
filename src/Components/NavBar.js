@@ -12,6 +12,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import { Box } from "@mui/material";
+// import { Link } from "react-scroll";
 
 export default function NavBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,6 +24,7 @@ export default function NavBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <nav>
       <Box
@@ -47,7 +49,7 @@ export default function NavBar() {
           PaperProps={{
             sx: {
               backgroundColor: "#171717",
-              color: "#d7d0d7", // Set the background color of the dialog content
+              color: "#d7d0d7",
             },
           }}
           id="menu-appbar"
@@ -64,19 +66,29 @@ export default function NavBar() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <MenuItem onClick={handleClose}>Home</MenuItem>
-          <MenuItem onClick={handleClose}>About</MenuItem>
-          <MenuItem onClick={handleClose}>Experience</MenuItem>
-          <MenuItem onClick={handleClose}>Projects</MenuItem>
-          <MenuItem onClick={handleClose}>Reviews</MenuItem>
-          <MenuItem onClick={handleClose}>Blogs</MenuItem>
-          <MenuItem onClick={handleClose}>Contact</MenuItem>
+          <MenuItem component="a" href="#intro" onClick={handleClose}>
+            Home
+          </MenuItem>
+          <MenuItem component="a" href="#about" onClick={handleClose}>
+            About
+          </MenuItem>
+          <MenuItem component="a" href="#experience" onClick={handleClose}>
+            Experience
+          </MenuItem>
+          <MenuItem component="a" href="#portfolio" onClick={handleClose}>
+            Projects
+          </MenuItem>
+          <MenuItem component="a" href="#reviews" onClick={handleClose}>
+            Reviews
+          </MenuItem>
+          <MenuItem component="a" href="#blogs" onClick={handleClose}>
+            Blogs
+          </MenuItem>
+          <MenuItem component="a" href="#contact" onClick={handleClose}>
+            Contact
+          </MenuItem>
           <Box display="flex">
-            <MenuItem
-              component="a"
-              href="https://github.com/Vanessa-Kris"
-              target="_blank"
-            >
+            <MenuItem component="a" href="https://github.com/Vanessa-Kris">
               <FontAwesomeIcon
                 style={{ fontSize: "30px", marginRight: 30 }}
                 icon={faGithub}
@@ -136,3 +148,19 @@ export default function NavBar() {
     </nav>
   );
 }
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
