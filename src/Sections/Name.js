@@ -19,7 +19,7 @@ export default function Name() {
         <Box sx={{ p: 2, border: "1px solid #a55f71", borderRadius: "5px" }}>
           <img
             alt=""
-            src="https://img.freepik.com/free-photo/delicious-ice-cream-with-topping_23-2150735486.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=ais"
+            src="https://img.freepik.com/premium-photo/sute-girl-hacker-with-laptop-avatar-cartoon-style-generated-ai_88188-3329.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=ais"
           />
           <Typography textAlign="center" variant="h6" sx={{ m: 2 }}>
             HEY THERE! I AM A
