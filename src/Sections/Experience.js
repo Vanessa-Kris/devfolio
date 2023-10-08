@@ -117,8 +117,7 @@ export default function Experience() {
               >
                 {" "}
                 <li>Python Astor</li>{" "}
-              </a>{" "}
-              etc .
+              </a>
             </ul>
             * Chaired NeuroFedora meeting
             <br />

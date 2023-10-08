@@ -9,9 +9,9 @@ export default function Reviews() {
 
   return (
     <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
-      <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
+      {/* <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         What People Are Saying
-      </Typography>
+      </Typography> */}
       <Typography variant="h3" sx={{ my: { md: 3, xs: 3 }, color: "#fff" }}>
         Reviews
         <Divider
@@ -39,7 +39,7 @@ export default function Reviews() {
             incredibly creative, and an absolute joy to have around."
           </Typography>
           <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>
-            Fru Promise
+            Promise Fru
           </Typography>
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
             Collaborator

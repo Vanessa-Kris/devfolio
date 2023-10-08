@@ -16,9 +16,9 @@ export default function About() {
   };
   return (
     <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
-      <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
+      {/* <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         ABOUT ME
-      </Typography>
+      </Typography> */}
       <Typography variant="h3" sx={{ my: { md: 3, xs: 3 }, color: "#fff" }}>
         Biography
         <Divider

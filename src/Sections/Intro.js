@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <Box sx={{ m: { md: 15, xs: 1 }, color: "#d7d0d7" }}>
-      <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
+    <Box sx={{ m: { md: 15, xs: 1 }, color: "#d7d0d7", pt: 8 }}>
+      {/* <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
         INTRODUCTION
-      </Typography>
+      </Typography> */}
       <Typography variant="h3" sx={{ my: { md: 3, xs: 3 }, color: "#fff" }}>
         UI/UX Engineer
         <Divider

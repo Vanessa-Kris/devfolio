@@ -108,7 +108,7 @@ export default function Contact() {
           variant={"h4"}
           sx={{ fontSize: { md: "37px", xs: "30px" } }}
         >
-          Sonac Street Bamenda, Cameroon ( Open to relocating )
+          Sonac Street Bamenda, Cameroon
         </Typography>
 
         <Typography variant="h5" sx={{ fontSize: { md: "17px" }, mt: 5 }}>
