@@ -16,9 +16,9 @@ export default function Intro() {
       </Typography>
 
       <Typography>
-        My specialization lies in designing and developing stylish, modern
-        websites, web services, and online stores. You would certainly benefit
-        from having me on your team!{" "}
+        I'm absolutely thrilled that you've discovered me! I love crafting
+        visually stunning websites, online stores, and web services. You'll
+        thoroughly enjoy collaborating with me.{" "}
       </Typography>
       <Box sx={{ mt: 7 }} component="img" src="/name.png" />
     </Box>

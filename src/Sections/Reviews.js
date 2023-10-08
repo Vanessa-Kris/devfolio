@@ -35,26 +35,24 @@ export default function Reviews() {
       <ul ref={ref} className="list2">
         <li className="listitems2">
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            "Vanessa is an exceptional team mate, fast learner, creative and
-            absolutely fun to be around"
+            "Vanessa is an outstanding teammate – she's a quick learner,
+            incredibly creative, and an absolute joy to have around."
           </Typography>
           <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>
             Fru Promise
           </Typography>
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            Co Worker
+            Collaborator
           </Typography>
         </li>
         <li className="listitems2">
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            " I Couldn't have found a better persin to build my blogging
-            website, it looks super cool and exactly as i envisioned."
+            "I couldn't have found a better person to create my blogging
+            website; it looks super cool and matches my vision perfectly."
           </Typography>
-          <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>
-            Sheba Chris
-          </Typography>
+          <Typography sx={{ color: "#fff", pt: 4, pb: 1 }}>Sheba C.</Typography>
           <Typography variant="h5" sx={{ fontSize: "17px" }}>
-            Customer
+            Client
           </Typography>
         </li>
       </ul>

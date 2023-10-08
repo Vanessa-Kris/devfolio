@@ -31,7 +31,12 @@ export default function Layout(props) {
   return (
     <Fragment>
       <Box sx={{ display: { md: "block", xs: "none" } }}>
-        <Grid id="layout" container columnSpacing={2}>
+        <Grid
+          id="layout"
+          container
+          columnSpacing={2}
+          className={scrollPosition > 100 ? "transition-delay" : ""}
+        >
           <Grid item md={scrollPosition > 100 ? 8 : 7} xs={12}>
             <Box id="intro">{props.intro}</Box>
             <Box id="about">{props.about}</Box>
@@ -45,7 +50,7 @@ export default function Layout(props) {
           <Divider
             flexItem
             orientation="vertical"
-            sx={{ bgcolor: "#a55f71" }}
+            sx={{ bgcolor: "#a55f71", transition: "all 0.3s ease 0.5s" }}
           />
           <Box
             sx={{
@@ -85,7 +90,9 @@ export default function Layout(props) {
         <Box id="contact">{props.contact}</Box>
         {props.footer}
       </Box>
-      <MouseMotionCircle x={mousePosition.x} y={mousePosition.y} />
+      <Box sx={{ display: { md: "block", xs: "none" } }}>
+        <MouseMotionCircle x={mousePosition.x} y={mousePosition.y} />
+      </Box>
     </Fragment>
   );
 }

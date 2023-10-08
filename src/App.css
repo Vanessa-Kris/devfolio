@@ -90,12 +90,6 @@ p{
     margin: 0 20px 0 0;
   }
   
-
-
- input {
-    color: white !important;
-  }
-  
   .sticky-grid {
     position: -webkit-sticky;
     position: fixed !important;
@@ -106,5 +100,10 @@ p{
   
   .mouse-motion-circle {
     z-index: 9999;
-    pointer-events: none; /* Allow clicks to go through the circle */
+    pointer-events: none; 
   }
+
+  .transition-delay {
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1.0); /* Adjust the duration and easing function as needed */
+  }
+  

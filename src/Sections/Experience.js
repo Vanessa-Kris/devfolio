@@ -46,7 +46,6 @@ export default function Experience() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
     <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -67,18 +66,20 @@ export default function Experience() {
               fontSize: { md: "20px", xs: "15px" },
               mx: { md: 2, xs: 0 },
             }}
-            label="Education"
+            label="Skills"
             {...a11yProps(1)}
           />
-          <Tab
+          {/* <Tab
             sx={{ color: "#d7d0d7", fontSize: { md: "20px", xs: "15px" } }}
             label="Skills"
             {...a11yProps(2)}
-          />
+          /> */}
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
+        <Card
+          sx={{ p: { md: 2, xs: 1 }, my: { md: 3, xs: 3 }, color: "#d7d0d7" }}
+        >
           <Typography sx={{ px: { md: 2, xs: 1 }, color: "#fff" }} variant="h5">
             Outreachy{" "}
             <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
@@ -89,8 +90,8 @@ export default function Experience() {
             Fedora (Package Manager)
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Packaged software for the Fedora Operating System
-            <ul>
+            * Packaged software for the Fedora Operating System :
+            <ul style={{ marginLeft: 20 }}>
               <a
                 style={{ textDecoration: "underline" }}
                 target="_blank"
@@ -119,15 +120,16 @@ export default function Experience() {
               </a>{" "}
               etc .
             </ul>
-            Chaired NeuroFedora meeting
+            * Chaired NeuroFedora meeting
             <br />
-            Edited Fedora documents
-            <br />
-            Collaboraive developement with Git ( Pagure )
+            * Edited Fedora documents
+            <br />* Collaborative developement with Git ( Pagure )
           </CardContent>
         </Card>
         {/*  */}
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
+        <Card
+          sx={{ p: { md: 2, xs: 1 }, my: { md: 3, xs: 3 }, color: "#d7d0d7" }}
+        >
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             Afkanerd{" "}
             <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
@@ -138,7 +140,7 @@ export default function Experience() {
             Jr. Front-end Engineer
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Worked with the backend team to build{" "}
+            * Worked with the backend team to build{" "}
             <a
               target="_blank"
               rel="noreferrer noopener"
@@ -147,8 +149,7 @@ export default function Experience() {
             >
               SMSWithoutBorders User analytics{" "}
             </a>
-            <br />
-            Worked closely with the backend team to maintain{" "}
+            <br />* Worked closely with the backend team to maintain{" "}
             <a
               target="_blank"
               rel="noreferrer noopener"
@@ -157,8 +158,8 @@ export default function Experience() {
             >
               SMSWithoutBorders web platform{" "}
             </a>
-            <br />
-            Worked closely with the backend team to build Deku SMS Messaging{" "}
+            <br />* Worked closely with the backend team to build Deku SMS
+            Messaging{" "}
             <a
               target="_blank"
               rel="noreferrer noopener"
@@ -170,7 +171,9 @@ export default function Experience() {
           </CardContent>
         </Card>
         {/*  */}
-        <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
+        <Card
+          sx={{ p: { md: 2, xs: 1 }, my: { md: 3, xs: 3 }, color: "#d7d0d7" }}
+        >
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             Stunners Galleria{" "}
             <span style={{ fontSize: "15px", color: "#d7d0d7" }}>
@@ -181,7 +184,7 @@ export default function Experience() {
             Freelance Front-end Engineer
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Worked closely with the backend team to create the{" "}
+            * Worked closely with the backend team to create the{" "}
             <a
               target="_blank"
               rel="noreferrer noopener"
@@ -190,8 +193,7 @@ export default function Experience() {
             >
               Stunners Galleria online store{" "}
             </a>
-            <br />
-            Worked closely with the backend team to create the{" "}
+            <br />* Worked closely with the backend team to create the{" "}
             <a
               target="_blank"
               rel="noreferrer noopener"
@@ -200,12 +202,11 @@ export default function Experience() {
             >
               Stunners Galleria Blog website.{" "}
             </a>
-            <br />
-            Created non technical content for Stunners Galleria blog
+            <br />* Created non technical content for Stunners Galleria blog
           </CardContent>
         </Card>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      {/* <CustomTabPanel value={value} index={1}>
         <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             Faith International College{" "}
@@ -217,12 +218,18 @@ export default function Experience() {
             High Scool
           </Typography>
           <CardContent sx={{ fontSize: "18px" }}>
-            Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Obtained my WAEC certification (West African Examination Council).
+            You can download it{" "}
+            <span
+              style={{ cursor: "pointer", textDecoration: "underline" }}
+              onClick={handleDownloadClick}
+            >
+              here.
+            </span>
           </CardContent>
         </Card>
 
-        {/*  */}
+        
         <Card sx={{ p: 2, my: 2, bgcolor: "#232323", color: "#d7d0d7" }}>
           <Typography sx={{ px: 2, color: "#fff" }} variant="h5">
             RIVERS STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY{" "}
@@ -238,23 +245,29 @@ export default function Experience() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardContent>
         </Card>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
+      </CustomTabPanel> */}
+      <CustomTabPanel value={value} index={1}>
         <Box>
           <Typography variant="h6" sx={{ fontSize: "15px" }}>
             HTML
           </Typography>
-          <LinearProgress variant="determinate" value={95} />
+          <LinearProgress variant="determinate" value={98} />
         </Box>
         <Box sx={{ my: 2 }}>
           <Typography variant="h6" sx={{ fontSize: "15px" }}>
             CSS
           </Typography>
-          <LinearProgress variant="determinate" value={80} />
+          <LinearProgress variant="determinate" value={90} />
         </Box>
         <Box sx={{ my: 2 }}>
           <Typography variant="h6" sx={{ fontSize: "15px" }}>
             Bootstrap
+          </Typography>
+          <LinearProgress variant="determinate" value={87} />
+        </Box>
+        <Box sx={{ my: 2 }}>
+          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+            Git
           </Typography>
           <LinearProgress variant="determinate" value={80} />
         </Box>
@@ -272,6 +285,12 @@ export default function Experience() {
         </Box>
         <Box sx={{ my: 2 }}>
           <Typography variant="h6" sx={{ fontSize: "15px" }}>
+            RPM
+          </Typography>
+          <LinearProgress variant="determinate" value={50} />
+        </Box>
+        <Box sx={{ my: 2 }}>
+          <Typography variant="h6" sx={{ fontSize: "15px" }}>
             Framer Motion
           </Typography>
           <LinearProgress variant="determinate" value={50} />
@@ -280,7 +299,7 @@ export default function Experience() {
           <Typography variant="h6" sx={{ fontSize: "15px" }}>
             Mui
           </Typography>
-          <LinearProgress variant="determinate" value={75} />
+          <LinearProgress variant="determinate" value={79} />
         </Box>
         <Box sx={{ my: 2 }}>
           <Typography variant="h6" sx={{ fontSize: "15px" }}>

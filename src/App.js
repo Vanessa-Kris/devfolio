@@ -20,6 +20,7 @@ import Intro from "./Sections/Intro";
 
 let theme = createTheme({
   palette: {
+    mode: "dark",
     primary: {
       main: "#673147",
     },

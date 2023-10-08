@@ -4,6 +4,16 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 export default function About() {
+  const handleDownloadClick = () => {
+    const cvUrl = "/Resume.pdf";
+    const anchor = document.createElement("a");
+    anchor.href = cvUrl;
+    anchor.download = "Vanessa_Resume.pdf";
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  };
   return (
     <Box sx={{ m: { md: 15, xs: 1 }, pt: 7, color: "#d7d0d7" }}>
       <Typography variant="h6" sx={{ my: { md: 5, xs: 5 }, fontWeight: 600 }}>
@@ -29,25 +39,25 @@ export default function About() {
         <Grid item md={3} xs={4}>
           <List>
             <ListItem> NAME </ListItem>
+            <ListItem> PRONOUNS </ListItem>
             <ListItem> BIRTHDAY </ListItem>
             <ListItem> AGE </ListItem>
             <ListItem> ADDRESS </ListItem>
             <ListItem> NATIONALITY </ListItem>
+            <ListItem> INTERESTS</ListItem>
             <ListItem> EMAIL </ListItem>
-            <ListItem> FACEBOOK </ListItem>
-            <ListItem> TWITTER X</ListItem>
           </List>
         </Grid>
         <Grid item md={4} xs={8} sx={{ color: "#fff" }}>
           <List>
             <ListItem> Vanessa Christopher Igwe </ListItem>
+            <ListItem> She/Her </ListItem>
             <ListItem> 10th August 2000 </ListItem>
             <ListItem> 23 Years </ListItem>
             <ListItem> Cameroon </ListItem>
             <ListItem> Nigerian </ListItem>
+            <ListItem> Food, Open Source, Music. </ListItem>
             <ListItem> vanessaigwe1@gmail.com </ListItem>
-            <ListItem> Vanessa Christopher Igwe </ListItem>
-            <ListItem> Vanessa Christopher Igwe </ListItem>
           </List>
         </Grid>
         <Grid item md={5} xs={12}>
@@ -56,9 +66,11 @@ export default function About() {
             // display="flex"
             textAlign="center"
             sx={{ border: "1px solid #d7d0d7", borderRadius: "10px", m: 2 }}
+            onClick={handleDownloadClick}
+            style={{ cursor: "pointer" }}
           >
             <FontAwesomeIcon
-              style={{ fontSize: "60px", padding: 50 }}
+              style={{ fontSize: "60px", padding: 40 }}
               icon={faDownload}
               bounce
               color="#d7d0d7"

@@ -35,11 +35,18 @@ export default function Contact() {
         fill out the form below, and I will reply to you shortly.
       </Typography>
 
-      <Grid container columnSpacing={2}>
+      <Grid
+        component="form"
+        action="https://formspree.io/f/mpzgognj"
+        method="POST"
+        container
+        columnSpacing={2}
+      >
         <Grid item md={6} xs={12} sx={{ py: 2 }}>
           Name* <br />
           <TextField
             fullWidth
+            name="name"
             id="outlined-basic"
             sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
           />
@@ -48,6 +55,7 @@ export default function Contact() {
           Email* <br />
           <TextField
             fullWidth
+            name="email"
             id="outlined-basic"
             variant="outlined"
             sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
@@ -57,6 +65,7 @@ export default function Contact() {
           Number <br />
           <TextField
             fullWidth
+            name="number"
             id="outlined-basic"
             variant="outlined"
             sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
@@ -66,17 +75,23 @@ export default function Contact() {
           Message* <br />
           <TextField
             fullWidth
+            name="message"
             multiline
             rows={4}
             id="outlined-basic"
             variant="outlined"
-            sx={{ border: "1px solid #a55f71", borderRadius: "5px" }}
+            className="input"
+            sx={{
+              border: "1px solid #a55f71",
+              borderRadius: "5px",
+            }}
           />
         </Grid>
 
         <Grid item md={12} xs={12} sx={{ py: 2 }}>
           <Button
-            variant="outlined"
+            type="submit"
+            variant="contained"
             sx={{ width: "100%", p: 2, fontWeight: 900 }}
           >
             Send Message
